@@ -1,0 +1,64 @@
+PRO 102: Automation
+
+Problem:
+1. Need to read big books which sometimes cause headace.  
+2. Problem to record the screen easily.
+3. When you sleep while studing, parants may sometime see and scold you.
+
+
+Problem 1 can be solved by building an Audio Book Reader
+    1. Python module for text to speech convertor
+    Ans : pip install pyttsx3 (Python text to speech version 3)
+          import pyttsx3
+
+    2. Python module for extracting text from pdf file
+    Ans: pip install PyPDF2
+         import PyPDF2
+
+    3. Python code
+    Ans: 1. Open your pdf file, either give direct path or take input from user
+         2. Read pdf file with PyPDF2.Pdf FileReader
+         3. Then, intialize speaker with speaker = pyttsx3.init()
+         4. Extract page from pdf file which we want to read with getPage()
+         5. Extract text from that page for reading with extractText()
+         6. Give the page to speaker for reading with speaker.say(text)
+         7. Give command to speaker for run & wait speaker.runAndWait()
+
+
+Problem 2 can be solved by building screen recorder  
+    1. Python module to grab image
+    Ans: pip install pillow 
+         from PIL import ImageGrab
+
+    2. Python module for working with array
+    Ans: pip install numpy
+         import numpy as np
+
+    3. Python module use to capture image & display 
+    Ans: pip install opencv-contrib-python
+         import cv2
+
+    4. Python module to import system Metrics
+    Ans: pip install pywin32
+         from win32api import GetSystemMetrics
+
+    5. Python module to create special file name 
+    Ans: import datetime
+
+    6. Python code
+
+
+Problem 3 can be solved by building my own security camera
+    1. Package to detect computer vision
+    Ans: import cv2
+
+    2. Python module to make movement sensor
+    Ans: import winsound
+
+    3. Python code
+        1. Open webcam and show video on screen
+        2. Detect any movement like any person come in your room
+        3. If any movement detected then play buzzer
+        4. Now let's start to do python code
+
+
